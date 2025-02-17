@@ -1,3 +1,12 @@
+/**
+ * @author Nassir Binion
+ * @see 
+ * @version
+ * @since
+ */
+
+
+
 public class Account {
 
     /**
@@ -45,7 +54,8 @@ public class Account {
      * @param lastName The account owner's last name.
      */
     public Account(String firstName, String lastName) {
-
+        this.firstName = firstName;
+        this.lastName = lastName;
 
     }
 
