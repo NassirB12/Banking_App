@@ -25,7 +25,7 @@ The user can create an account, deposit money, withdrawal money, and view other 
 
 * How to run the program
 ```
-[Video] 
+[Video] uu
 ```
 
 ## Help
