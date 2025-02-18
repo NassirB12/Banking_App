@@ -106,7 +106,7 @@ public class Account {
      * Allows making a withdrawal for amounts greater than zero and NOT greater than the account balance.
      * @param amount The amount to reduce the account balance.
      */
-    public void withdraw(double amount) {
+    public void withdrawal(double amount) {
         if (amount <= 0) {
             throw new IllegalArgumentException("Invalid amount. Must be greater than 0.");
         }
