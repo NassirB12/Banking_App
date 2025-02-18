@@ -25,7 +25,7 @@ The user can create an account, deposit money, withdrawal money, and view other 
 
 * How to run the program
 ```
-[Video] uu
+[Video] (https://github.com/user-attachments/assets/066faf7d-2e2d-4b90-9596-c98b18ce2ee3)
 ```
 
 ## Help
