@@ -49,7 +49,17 @@ Contributors names and contact info
 * 0.1
     * Beta
 
+## Tech Stack
+- ![Amazon Corretto](https://img.shields.io/badge/Amazon_Corretto-blue?style=for-
+  the-badge&logo=amazon-aws&logoColor=white)
+- ![Java Version](https://img.shields.io/badge/Java-17-blue)
+- ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-
+  the-badge&logo=intellij-idea&logoColor=white)
 
+## Future Enhancements
+1. Add support for multiple accounts.
+2. Add support for multiple account types (checking, savings, etc.)
+2. Support for saving and loading account data to/from a file.
 
 
 ## Acknowledgments
