@@ -1,12 +1,11 @@
 /**
+ * Class used to create an Account with basic account information.
+ *
  * @author Nassir Binion
- * @see https://github.com/NassirB12/Banking_App
- * @version
+ * @see <a href=https://github.com/NassirB12/Banking_App
+ * @version beta 0.0
  * @since 2025.02.011
  */
-
-
-
 public class Account {
 
     /**
