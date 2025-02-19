@@ -16,7 +16,7 @@ public class Account {
     /**
      * The unique account number assigned by the default constructor.
      */
-    private int id;
+    private final int id;
 
     /**
      * The account owner's first name.
@@ -42,15 +42,6 @@ public class Account {
         this.balance = 0;
         this.firstName = "Unknown";
         this.lastName = "Unknown";
-    }
-
-    /**
-     *
-     * @return Returns the users unique account id.
-     */
-    public int getId() {
-        return id;
-
     }
 
     /**
