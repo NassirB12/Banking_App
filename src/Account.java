@@ -41,6 +41,10 @@ public class Account {
         id = ++lastId;
     }
 
+    /**
+     *
+     * @return Returns the users unique account id.
+     */
     public int getId() {
         return id;
 
