@@ -38,7 +38,10 @@ public class Account {
      * also sets all the initial values for instance level fields.
      */
     public Account() {
-        id = ++lastId;
+        this.id = ++Account.lastId;
+        this.balance = 0;
+        this.firstName = "Unknown";
+        this.lastName = "Unknown";
     }
 
     /**
