@@ -56,10 +56,13 @@ public class Account {
     /**
      * The overload constructor calls the default constructor and the allows overriding
      * the default values for the account owner's name by calling the setters for data validation.
+     *
      * @param firstName The account owner's first name.
      * @param lastName The account owner's last name.
      */
     public Account(String firstName, String lastName) {
+        this(); // call the default constructor
+
         this.firstName = firstName;
         this.lastName = lastName;
 
@@ -109,17 +112,26 @@ public class Account {
     }
 
     /**
-     * Allows making a withdrawal for amounts greater than zero and NOT greater than the account balance.
+     * Allows making a withdrawal for amounts greater than zero
+     * and NOT greater than the account balance.
      * @param amount The amount to reduce the account balance.
+     * @throws IllegalArgumentException Invalid Amount [-100.00]. Must be greater than 0.
+     * @throws IllegalArgumentException Invalid Amount [500.00]. Cannot be greater than the balance.
      */
     public void withdrawal(double amount) {
-        if (amount <= 0) {
-            throw new IllegalArgumentException("Invalid amount. Must be greater than 0.");
-        }
-        if (amount > balance) {
-            throw new IllegalArgumentException("Invalid amount. Cannot be greater than the account balance of " + balance);
-        }
-        balance -= amount;
+        if (amount <= 0)
+            throw new IllegalArgumentException("Invalid amount [" +
+                    String.format("%,.2f", amount) + "]. " +
+                    "Must be greater than 0.");
+
+
+        else if (amount > this.balance)
+            throw new IllegalArgumentException("Invalid amount [" +
+                    String.format("%,.2f", amount) + "]. " +
+                    "Cannot be greater than the balance [." +
+                    String.format("%,.2f", this.balance) + "].");
+        else
+            this.balance -= amount;
     }
 
     /**
