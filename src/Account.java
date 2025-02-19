@@ -135,11 +135,12 @@ public class Account {
     }
 
     /**
-     * General account information (id and name) as a string. Example: ID #1: Nassir Binion.
+     * General account information (id and name) as a string.
+     * Example: ID #1: Nassir Binion.
      * @return The account's id and name.
      */
     @Override
     public String toString() {
         return "Account [id#" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
     }
-}
+} // end of Account class
